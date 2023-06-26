@@ -1,0 +1,50 @@
+.endereco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.endereco img{
+  margin-top: 180px;
+  margin-bottom: 140px;
+}
+
+.endereco-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+}
+
+.endereco-content h2{
+  margin-top: 30px;
+  margin-left: 120px;
+  margin-bottom: 60px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #980800;
+
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 12px;
+}
+
+.content img{
+  width: 15px;
+  height: 8px;
+  margin-right: 8px;
+}
+
+.content p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}

@@ -1,0 +1,355 @@
+.carnes p {
+  text-align: center;
+  margin-top: 120px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #980800;
+  text-transform: capitalize;
+}
+
+.carnes img.line {
+  margin-top: 20px;
+  width: 2px;
+  height: 2094px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.especialidades h2 {
+  position: relative;
+  color: #980800;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-left: 120px;
+  line-height: 48px;
+  width: 460px;
+  height: 54px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px solid #980800;
+  border-radius: 10px;
+  font-size: 26px;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.especialidades h2::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #980800;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.especialidades h2:hover::before {
+  width: 160%;
+}
+
+.especialidades h2::after{
+  content: '';
+  top: 15px;
+  right: 20px;
+  position: absolute;
+  border-top: 20px solid #980800;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+}
+
+.especialidades h2:hover{
+  background-color: #980800;
+  color: #ffffff;
+}
+
+.especialidades h2:hover::after{
+  border-top: 20px solid #ffffff;
+}
+
+.especialidades h2.active{
+  transition: all 0.3s;
+  background-color: #980800;
+  color: #ffffff;
+}
+
+.especialidades h2.active::after:hover{
+  display: none;
+}
+
+.especialidades h2.active::after{
+  content: '';
+  top: -8px;
+  right: 20px;
+  position: absolute;
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  animation: show-up .3s ease-in-out ;
+ 
+}
+
+@keyframes show-up{
+  from{
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.especialidades img {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 120px;
+  display: none;
+  /* width: 460px;
+  height: 379px; */
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0, 0.3);
+  animation: show-up 1s forwards;
+}
+
+.especialidades img.active{
+  display: flex;
+}
+
+.especialidades .grid-info{
+  display: none;
+}
+
+.especialidades .grid-info.active{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #6B1009;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 0 0 5px 5px;
+  margin-left: 120px;
+  height: 80px;
+  width: 460px;
+  animation: aparecer 1s forwards;
+}
+
+
+.especialidades .grid-info p{
+  color: white;
+  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.especialidades .grid-info span{
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 22px;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.especialidades .grid-info button{
+  cursor: pointer;
+  background-color: #FFFFFF;
+  margin-top: 24px;
+  margin-left: 30px;
+  width: 173px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #6B1009;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #4e0000;
+}
+
+.especialidades .grid-info button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+
+.exoticas h2 {
+  position: relative;
+  color: #980800;
+  font-weight: 400;
+  margin-top: 90px;
+  margin-left: 120px;
+  line-height: 48px;
+  width: 460px;
+  height: 54px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px solid #980800;
+  border-radius: 10px;
+  font-size: 26px;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.exoticas h2::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #980800;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.exoticas h2:hover::before {
+  width: 160%;
+}
+
+.exoticas h2::after{
+  content: '';
+  top: 15px;
+  right: 20px;
+  position: absolute;
+  border-top: 20px solid #980800;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+}
+
+.exoticas h2:hover{
+  background-color: #980800;
+  color: #ffffff;
+}
+
+.exoticas h2:hover::after{
+  border-top: 20px solid #ffffff;
+}
+
+.exoticas h2.active{
+  background-color: #980800;
+  color: #ffffff;
+}
+
+.exoticas h2.active::after:hover{
+  display: none;
+}
+
+.exoticas h2.active::after{
+  content: '';
+  top: -8px; 
+  right: 20px;
+  position: absolute;
+  border-bottom: 20px solid rgb(255, 255, 255);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  animation: show-up .3s ease-in-out ;
+ 
+}
+
+.exoticas img {
+  position: relative;
+  margin-top: 80px;
+  margin-left: 120px;
+  display: none;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0, 0.3);
+  animation: show-up 1s forwards;
+}
+
+.exoticas img.active{
+  display: flex;
+}
+
+.exoticas .grid-info2{
+  display: none;
+}
+
+.exoticas .grid-info2.active{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #6B1009;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 0 0 5px 5px;
+  margin-left: 120px;
+  height: 80px;
+  width: 460px;
+  animation: aparecer 1s forwards;
+}
+
+
+.exoticas .grid-info2 p{
+  color: white;
+  font-size: 22px;
+  margin-top: 8px;
+  margin-left: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+.exoticas .grid-info2 span{
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 22px;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.exoticas .grid-info2 button{
+  cursor: pointer;
+  background-color: #FFFFFF;
+  margin-top: 24px;
+  margin-left: 30px;
+  width: 173px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #6B1009;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #4e0000;
+}
+
+.exoticas .grid-info2 button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+
+@keyframes aparecer {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

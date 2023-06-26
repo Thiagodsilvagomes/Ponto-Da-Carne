@@ -1,0 +1,44 @@
+.introducao {
+  margin: 0 auto;
+  background-color: #6b1009;
+  border-top: 1px solid grey;
+}
+
+main .descricao {
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+main .descricao p {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0 auto;
+  margin-left: 120px;
+  color: whitesmoke;
+  font-size: 25px;
+  min-width: 500px;
+}
+
+main .descricao span {
+  font-weight: 600;
+  color: white;
+}
+
+main .descricao img {
+  margin-top: 60px;
+  margin-right: 10px;
+  animation: mover-img 2s ease-in-out infinite;
+}
+
+@keyframes mover-img {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

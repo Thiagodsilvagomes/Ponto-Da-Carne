@@ -1,0 +1,287 @@
+img#cttpng{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.span-required{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: -25px;
+  display: none;
+  color: crimson;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+.container-contato{
+  background-image: linear-gradient(to right, #ffffff 50%, #960a00 50%);
+  width: 100%;
+}
+
+.contato-grid{
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 140px;
+
+}
+
+.form{
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-right: 40px;
+}
+
+.form label{
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #980800;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.form input{
+  cursor: pointer;
+  width: 440px;
+  height: 45px;
+  margin-bottom: 10px;
+  border: none;
+  border: 0.5px solid rgba(95, 95, 95, 0.6);
+  background-color:#F6F6F6;
+  padding-left: 5px;
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.radio h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #980800; 
+  margin-right: 5px;
+}
+
+.radio span{
+  margin-right: 12px;
+}
+
+.radio-button{
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #F6F6F6;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.radio-button:hover{
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.radio-button.marcado{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #960a00;
+  border: 1px solid black;
+  transition: all .3s;
+}
+
+.radio-button.marcado::after{
+  position: absolute;
+  content: url(../img/check.svg);
+}
+
+.select{
+  position: relative;
+}
+
+.select h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 25px;
+  color: #980800;
+}
+
+.options{
+  position: absolute;
+  z-index: 1;
+  margin-top: 8px;
+  border: 0.5px solid rgba(95, 95, 95, 0.6);
+  width: 440px;
+  background-color: #F6F6F6;
+}
+
+.options .seta{
+  display: block;
+}
+
+.options .seta::after{
+  position: absolute;
+  content: url(../img/option.png);
+  right: 15px;
+}
+
+.options .seta.active::after{
+  content: url(../img/option2.png);
+  animation: show-up 0.5s ease-in-out;
+}
+
+.options p{
+  animation: show-bottom 0.5s ease-in-out;
+  display: none;
+  padding: 5px;
+}
+
+@keyframes show-bottom{
+  from{
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.options p.active{
+  display: block;
+}
+
+.options p:hover{
+  cursor: pointer;
+  background-color: #980800;
+  color: white;
+}
+
+.options .seta:hover{
+  background-color: initial;
+  color: black;
+}
+
+.checkbox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 350px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.checkbox h2{
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #980800; 
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.input-checkbox{
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-color: #F6F6F6;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-right: 6px;
+}
+
+.checkbox span{
+  margin-right: 12px;
+}
+
+.input-checkbox.marcado{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #960a00;
+  border: 1px solid black;
+  transition: all .3s;
+}
+
+.input-checkbox.marcado::after{
+  position: absolute;
+  content: url(../img/check.svg);
+}
+
+#mensagem{
+  margin-top: 8px;
+  background-color: #F6F6F6;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 440px;
+  height: 150px;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+
+.form .enviar{
+  border: none;
+  background: #410000;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #260000 0px 7px 2px, #000 0px 8px 5px;
+  width:200px;
+  line-height: 30px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 10px 15px;
+}
+
+.form .enviar:hover{
+  opacity: 1;
+}
+
+.form .enviar:active {
+  top: 4px;
+  box-shadow: #4b0600 0px 3px 2px,#000 0px 3px 5px;
+}
+
+
+/* .detalhes img{
+ justify-content: center;
+ align-items: center;
+} */
+
+.detalhes ::after{
+  position: absolute;
+  z-index: 1000;
+  content: url("../img/barbaRuiva2.png");
+  top: 130px;
+  left: 530px;
+}
+
+.detalhes h2{
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: -80px;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 1.5;
+  color: white;
+  display: flex;
+  justify-content: start;
+}

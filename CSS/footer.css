@@ -1,0 +1,106 @@
+.container-footer{
+  background-color: #410000;
+}
+
+.grid-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 160px;  
+}
+
+.logo-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.redes-socias{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.redes-socias img{
+  cursor: pointer;
+  margin-left: 16px;
+  width: 50px;
+}
+
+.redes-socias img:hover{
+  opacity: 80%;
+  animation: imgMove 1s alternate;
+}
+
+.info-cnpj{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+  margin-top: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #F6F6F6;
+}
+
+.links-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 12px;
+  margin-left: 180px;
+}
+
+.links-footer a{
+  margin-top: 6px;
+  text-align: start;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.links-footer a:hover{
+  color: #cfcfcf;
+}
+
+
+@keyframes imgMove{
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(20%);
+  }
+  100%{
+    transform: translateY(20%);
+  }
+}
+
+
+.copy{
+  background-color: #200000;
+  margin-top: 32px;
+  padding: 3px 0;
+}
+
+.copy p{
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
