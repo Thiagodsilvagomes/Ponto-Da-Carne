@@ -42,3 +42,51 @@ main .descricao img {
     transform: translateY(0);
   }
 }
+
+/* Responsividade laptops */
+
+@media (max-width: 1015px) {
+  main .descricao p {
+    margin-left: 30px;
+    font-size: 20px;
+    min-width: 380px;
+  }
+
+  main .descricao img {
+    margin-top: 0px;
+    width: 54%;
+    animation: mover-img 2s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 774px) {
+  main .descricao p {
+    margin-left: 60px;
+    font-size: 20px;
+    min-width: 380px;
+  }
+
+  main .descricao img {
+    margin-top: 0px;
+    width: 45%;
+    animation: mover-img 2s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 480px){
+  main .descricao {
+    display: flex;
+    max-width: 100%;
+  }
+
+  main .descricao p {
+    font-size: 16px;
+    margin: 0px 40px;
+    padding: 40px 0;
+    min-width: 290px;
+  }
+
+  main .descricao img {
+   display: none;
+  }
+}
