@@ -353,3 +353,111 @@
     transform: translateY(0%);
   }
 }
+
+@media (max-width: 1015px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+
+  .carnes p{
+    font-size: 30px;
+  }
+
+  .especialidades h2{
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+
+  .especialidades img {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    display: none;
+  }
+
+  .especialidades .grid-info.active{
+    margin: 0 auto;
+  }
+
+  /* EXOTICAS */
+
+
+  .exoticas h2 {
+    margin: 0 auto;
+    margin-top: 90px;
+  }
+
+  .exoticas img {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+    display: none;
+  }
+
+  .exoticas .grid-info2.active{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px){
+  .carnes p{
+    margin-top: 80px;
+    font-size: 18px;
+  }
+
+  .grid{
+    justify-content: center;
+  }
+
+  .especialidades h2{
+    font-size: 20px;
+    width: 322px;
+    height: 54px;
+    margin-top: 80px;
+  }
+
+  .especialidades img{
+    width: 322px;
+  }
+
+  .especialidades .grid-info.active{
+    width: 322px;
+    height: 70px;
+  }
+
+  .especialidades .grid-info p{
+    font-size: 18px;
+  }
+
+  .especialidades .grid-info button{
+    width: 115px;
+    font-size: 18px;
+  }
+
+  /* EXOTICAS */
+
+  .exoticas h2 {
+    font-size: 20px;
+    width: 322px;
+    height: 54px;
+  }
+
+  .exoticas img{
+    width: 322px;
+  }
+
+  .exoticas .grid-info2.active{
+    width: 322px;
+    height: 70px;
+  }
+
+  .exoticas .grid-info2 p{
+    font-size: 18px;
+  }
+
+  .exoticas .grid-info2 button{
+    width: 115px;
+    font-size: 18px;
+  }
+  
+}

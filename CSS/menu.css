@@ -98,4 +98,10 @@ nav.navigation {
     margin-left: 8px;
     padding: 5px 10px;
   }
+
+  .navigation a:hover {
+    color: rgb(209, 209, 209);
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
