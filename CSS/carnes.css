@@ -402,7 +402,7 @@
 @media (max-width: 480px){
   .carnes p{
     margin-top: 80px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .grid{
@@ -410,7 +410,7 @@
   }
 
   .especialidades h2{
-    font-size: 20px;
+    font-size: 18px;
     width: 322px;
     height: 54px;
     margin-top: 80px;
@@ -426,18 +426,22 @@
   }
 
   .especialidades .grid-info p{
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .especialidades .grid-info span{
+    font-size: 14px;
   }
 
   .especialidades .grid-info button{
     width: 115px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* EXOTICAS */
 
   .exoticas h2 {
-    font-size: 20px;
+    font-size: 18px;
     width: 322px;
     height: 54px;
   }
@@ -452,12 +456,16 @@
   }
 
   .exoticas .grid-info2 p{
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .exoticas .grid-info2 span{
+    font-size: 14px;
   }
 
   .exoticas .grid-info2 button{
     width: 115px;
-    font-size: 18px;
+    font-size: 16px;
   }
   
 }

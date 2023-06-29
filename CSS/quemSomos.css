@@ -107,3 +107,84 @@
   border-radius: 10px;
   padding: 5px 15px;
 }
+
+/* Responsividade laptops */
+
+@media (max-width: 1015px) {
+  .container-quemSomos{
+    background-image: linear-gradient(to right, #960a00 0%, #ffffff 0%);
+  }
+  .quem-somos{
+    grid-template-columns: 1fr;
+  }
+
+  .sobre{
+    background-color: #960a00;
+    display: grid;
+    justify-content: center;
+  }
+
+  .sobre h2{
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .sobre a{
+    margin-left: 0;
+  }
+
+  .habilidades{
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .info p{
+    width: 600px;
+  }
+}
+
+@media (max-width: 480px){
+  .container-quemSomos{
+    display: grid;
+    justify-content: center;
+  }
+  .sobre h2{
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .sobre p{
+    text-align: center;
+    font-size: 18px;
+    width: 340px;
+  }
+
+  .sobre a{
+    text-align: center;
+    font-size: 14px;
+    margin-left: 0;
+    width: 350px;
+  }
+
+  .habilidades  img.logo{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 200px;
+    height: 140px;
+  }
+
+  .info img{
+    margin-left: 40px;
+    width: 40px;
+  }
+
+  .info p{
+    font-size: 14px;
+    width: 300px;
+  }
+  
+}
+
