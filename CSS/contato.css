@@ -285,3 +285,124 @@ img#cttpng{
   display: flex;
   justify-content: start;
 }
+
+
+/* Responsividade laptops */
+
+@media (max-width: 1015px) {
+  img#cttpng{
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  .container-contato{
+    background-image: linear-gradient(to right, #ffffff 100%, #960a00 0%);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+
+  .contato-grid{
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+  }
+
+  .form{
+    margin-top: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .detalhes ::after{
+    display: none;
+  }
+
+  .detalhes h2{
+    display: none;
+  }
+}
+
+@media (max-width: 480px){
+  img#cttpng{
+    width: 60px;
+  }
+
+  
+  .contato-grid{
+    margin-top: 60px;
+  }
+
+  .form{
+    margin-top: 10px;
+  }
+
+  .form input{
+    width: 300px;
+    height: 35px;
+  }
+
+  .form label{
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #980800;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .span-required{
+    font-size: 13px;
+  }
+
+  .radio{
+    flex-wrap: wrap;
+    max-width: min-content;
+  }
+  
+  .radio h2{
+    font-size: 17px;
+  }
+
+  .radio span{
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  .select h2{
+    font-size: 17px;
+  }
+
+  .options{
+    width: 300px;
+  }
+
+  .options p{
+    font-size: 14px;
+  }
+
+  .checkbox{
+    max-width: 300px;
+  }
+
+  .checkbox h2{
+    font-size: 17px;
+  }
+
+  .checkbox span{
+    font-size: 14px;
+  }
+
+  #mensagem{
+    width: 300px;
+  }
+
+  #mensagem::placeholder{
+    font-size: 14px;
+  }
+
+  .form .enviar{
+    font-size: 14px;
+    width: 160px;
+  }
+}
