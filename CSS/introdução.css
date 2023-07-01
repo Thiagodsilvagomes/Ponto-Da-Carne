@@ -54,7 +54,7 @@ main .descricao img {
 
   main .descricao img {
     margin-top: 0px;
-    width: 54%;
+    width: 50%;
     animation: mover-img 2s ease-in-out infinite;
   }
 }

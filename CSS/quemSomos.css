@@ -144,7 +144,8 @@
 }
 
 @media (max-width: 480px){
-  .container-quemSomos{
+  .quem-somos{
+    overflow: hidden;
     display: grid;
     justify-content: center;
   }
