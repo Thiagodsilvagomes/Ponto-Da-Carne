@@ -48,3 +48,33 @@
   font-size: 18px;
   color: #000000;
 }
+
+@media (max-width: 1015px) {
+  .mapa iframe{
+    margin-left: 60px;
+    width: 350px;
+  }
+
+  .content p{
+    font-size: 16px;
+  }
+
+  .endereco-content h2{
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px){
+  .endereco-content{
+    display: none;
+  }
+
+  .mapa iframe{
+    margin-left: 0px;
+    width: 350px;
+  }
+
+  .endereco img{
+    width: 60px;
+  }
+}
